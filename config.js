@@ -1,4 +1,5 @@
 const config = {
+	port: process.env.PORT,
 	database: {
 		protocol: "mongodb+srv:",
 		user: process.env.DB_USER,

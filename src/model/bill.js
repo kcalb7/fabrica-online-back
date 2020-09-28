@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 class Bill extends mongoose.Schema {
 	constructor() {
 		super({
-			describe: {
+			description: {
 				type: String,
 				required: true,
 			},
