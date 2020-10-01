@@ -6,8 +6,8 @@ class BillRoute {
 			.route("/bills")
 			.get(billController.listAll)
 			.post(billController.add)
-			.put(billController.edit)
-			.delete(billController.delete);
+			.put(billController.edit);
+		app.route("/bills/:id").delete(billController.delete);
 	}
 }
 

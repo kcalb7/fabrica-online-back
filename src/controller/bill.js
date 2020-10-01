@@ -30,7 +30,7 @@ class BillController {
 	}
 	static async delete(req, res) {
 		try {
-			let deleteBill = req.body;
+			let deleteBill = req.params;
 			res.status(200).json(await bill.findByIdAndDelete(deleteBill.id));
 		} catch (error) {
 			console.log(`/bill delete: ${error}`);
